@@ -27,10 +27,12 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesVersionString[];
 #import "JSQMessagesLoadEarlierHeaderView.h"
 
 //  Layout
+#import "JSQMessagesBubbleSizeCalculating.h"
+#import "JSQMessagesBubblesSizeCalculator.h"
 #import "JSQMessagesCollectionViewFlowLayout.h"
 #import "JSQMessagesCollectionViewLayoutAttributes.h"
 #import "JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
-#import "JSQMessagesBubbleSizeCalculating.h"
+#import "JSQAudioMediaViewAttributes.h"
 
 //  Toolbar
 #import "JSQMessagesComposerTextView.h"
@@ -41,12 +43,15 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesVersionString[];
 #import "JSQMessage.h"
 
 #import "JSQMediaItem.h"
+#import "JSQAudioMediaItem.h"
 #import "JSQPhotoMediaItem.h"
 #import "JSQLocationMediaItem.h"
 #import "JSQVideoMediaItem.h"
 
 #import "JSQMessagesBubbleImage.h"
 #import "JSQMessagesAvatarImage.h"
+
+#import "JSQAudioMediaViewAttributes.h"
 
 //  Protocols
 #import "JSQMessageData.h"
@@ -55,6 +60,7 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesVersionString[];
 #import "JSQMessageBubbleImageDataSource.h"
 #import "JSQMessagesCollectionViewDataSource.h"
 #import "JSQMessagesCollectionViewDelegateFlowLayout.h"
+#import "JSQMessagesViewAccessoryButtonDelegate.h"
 
 //  Factories
 #import "JSQMessagesAvatarImageFactory.h"
@@ -64,8 +70,8 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesVersionString[];
 #import "JSQMessagesToolbarButtonFactory.h"
 
 //  Categories
-#import "JSQSystemSoundPlayer+JSQMessages.h"
 #import "NSString+JSQMessages.h"
 #import "UIColor+JSQMessages.h"
 #import "UIImage+JSQMessages.h"
 #import "UIView+JSQMessages.h"
+#import "NSBundle+JSQMessages.h"
