@@ -6,7 +6,7 @@
 The dependencies [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) and [JSQSystemSoundPlayer](https://github.com/jessesquires/JSQSystemSoundPlayer) are added as git subtree modules. This allows us to easily pull in newer changes to JSQMessagesViewController.
 
 ### Usage ###
-Add ```github "hemantasapkota/JSQMessagesViewController"``` to your ```cart``` file.
+Add ```github "SammyVimes/JSQMessagesViewController"``` to your ```cart``` file.
 Execute ```carthage update```
 
 For usage in Swift, don't forget to add ```#import <JSQMessages/JSQMessages.h>``` to your bridging header file.
